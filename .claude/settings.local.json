@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/repos/main/NexaMind/**)",
+      "Bash(make:*)",
+      "Bash(pip install:*)",
+      "Bash(docker:*)",
+      "Bash(cp:*)",
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "Bash(git add:*)",
+      "Bash(rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm audit:*)",
+      "Bash(safety check:*)",
+      "Bash(pip uninstall:*)",
+      "Bash(safety scan:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run type-check:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
