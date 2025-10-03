@@ -83,9 +83,7 @@ if (Test-IsWin19) {
     $tools.AddToolVersion("Google Cloud CLI", $(Get-GoogleCloudCLIVersion))
 }
 $tools.AddToolVersion("ImageMagick", $(Get-ImageMagickVersion))
-if (-not (Test-IsWin25)) {
-    $tools.AddToolVersion("InnoSetup", $(Get-InnoSetupVersion))
-}
+$tools.AddToolVersion("InnoSetup", $(Get-InnoSetupVersion))
 $tools.AddToolVersion("jq", $(Get-JQVersion))
 $tools.AddToolVersion("Kind", $(Get-KindVersion))
 $tools.AddToolVersion("Kubectl", $(Get-KubectlVersion))
@@ -195,9 +193,8 @@ $databaseTools.AddToolVersion("DacFx", $(Get-DacFxVersion))
 $databaseTools.AddToolVersion("MySQL", $(Get-MySQLVersion))
 $databaseTools.AddToolVersion("SQL OLEDB Driver", $(Get-SQLOLEDBDriverVersion))
 $databaseTools.AddToolVersion("SQLPS", $(Get-SQLPSVersion))
-if (Test-IsWin25) {
-    $databaseTools.AddToolVersion("MongoDB Shell (mongosh)", $(Get-MongoshVersion))
-}
+$databaseTools.AddToolVersion("MongoDB Shell (mongosh)", $(Get-MongoshVersion))
+
 
 # Web Servers
 $installedSoftware.AddHeader("Web Servers").AddTable($(Build-WebServersSection))
